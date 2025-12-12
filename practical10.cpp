@@ -17,7 +17,6 @@ public:
     std::string getName() const {
         return name;
     }
-    // *****************************************
 
     void display() const {
         std::cout << "| Name: " << name << " | Type: " << type << " | Scope: " << scope_level << " |" << std::endl;
@@ -53,8 +52,6 @@ public:
         table.addSymbol(std::move(newSym));
     }
 };
-
-// --- Driver Program ---
 int main() {
     SymbolTable globalScopeTable; 
     SymbolRegistrar registrar;    
@@ -70,3 +67,4 @@ int main() {
 
     return 0;
 }
+
